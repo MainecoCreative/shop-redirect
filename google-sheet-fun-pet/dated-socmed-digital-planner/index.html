@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+      fetch('https://ipapi.co/json/')
+        .then(res => res.json())
+        .then(data => {
+          const country = data.country;
+          if (country === "MY") {
+            window.location.href = "https://s.shopee.com.my/AKNNGRhp2e";
+          } else {
+            window.location.href = "https://jademaineco.etsy.com/listing/1765890551/social-media-content-planner-pdf-content";
+          }
+        });
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to your local shop...</p>
+  </body>
+</html>
